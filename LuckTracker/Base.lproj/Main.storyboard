@@ -97,16 +97,25 @@
                                                 <rect key="frame" x="0.0" y="405" width="35" height="32"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <state key="normal" title="10"/>
+                                                <connections>
+                                                    <action selector="dice10ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="erP-2d-M2l"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTC-L3-aCK">
                                                 <rect key="frame" x="0.0" y="450" width="35" height="32"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <state key="normal" title="11"/>
+                                                <connections>
+                                                    <action selector="dice11ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8jR-yq-c8u"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mou-TA-cpn">
                                                 <rect key="frame" x="0.0" y="495" width="35" height="32"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <state key="normal" title="12"/>
+                                                <connections>
+                                                    <action selector="dice12ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ExP-OT-HtA"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>

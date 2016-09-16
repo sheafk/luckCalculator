@@ -35,19 +35,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var totalNumOfRolls: UILabel!
     
-    func addOneRoll(dice: Int) -> (Int) {
-        
-        var dicePlusOne = dice + 1
-        
-        return dicePlusOne
-        
-    }
-    
-    
     @IBAction func dice2ButtonTapped(sender: AnyObject) {
         
         dice2Total = dice2Total + 1
-        print("Someone rolled a 1. Total number of 1's is \(dice2Total)")
+        print("Someone rolled a 2. Total number of 2's is \(dice2Total)")
     }
     
     @IBAction func dice3ButtonTapped(sender: AnyObject) {
@@ -87,9 +78,32 @@ class ViewController: UIViewController {
     
     @IBAction func dice9ButtonTapped(sender: AnyObject) {
         
-        addOneRoll(dice9Total)
+        dice9Total = dice9Total + 1
+
         print("Someone rolled a 9. Total number of 9's is \(dice9Total)")
     }
+    
+    @IBAction func dice10ButtonTapped(sender: AnyObject) {
+        
+        dice10Total = dice10Total + 1
+        
+        print("Someone rolled a 10. Total number of 10's is \(dice10Total)")
+    }
+    
+    @IBAction func dice11ButtonTapped(sender: AnyObject) {
+        
+        dice11Total = dice11Total + 1
+        
+        print("Someone rolled a 11. Total number of 11's is \(dice11Total)")
+    }
+    
+    @IBAction func dice12ButtonTapped(sender: AnyObject) {
+        
+        dice12Total = dice12Total + 1
+        
+        print("Someone rolled a 12. Total number of 12's is \(dice12Total)")
+    }
+    
     
     
     
