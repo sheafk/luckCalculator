@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BD9E9BD1D8C4AC500D7F712 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD9E9BC1D8C4AC500D7F712 /* AppDelegate.swift */; };
+		1BD9E9BF1D8C4AC500D7F712 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD9E9BE1D8C4AC500D7F712 /* ViewController.swift */; };
+		1BD9E9C21D8C4AC500D7F712 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BD9E9C01D8C4AC500D7F712 /* Main.storyboard */; };
+		1BD9E9C51D8C4AC500D7F712 /* LuckTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1BD9E9C31D8C4AC500D7F712 /* LuckTracker.xcdatamodeld */; };
+		1BD9E9C71D8C4AC500D7F712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BD9E9C61D8C4AC500D7F712 /* Assets.xcassets */; };
+		1BD9E9CA1D8C4AC500D7F712 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BD9E9C81D8C4AC500D7F712 /* LaunchScreen.storyboard */; };
+		1BD9E9D51D8C4AC500D7F712 /* LuckTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD9E9D41D8C4AC500D7F712 /* LuckTrackerTests.swift */; };
+		1BD9E9E01D8C4AC500D7F712 /* LuckTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD9E9DF1D8C4AC500D7F712 /* LuckTrackerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1BD9E9D11D8C4AC500D7F712 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BD9E9B11D8C4AC500D7F712 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BD9E9B81D8C4AC500D7F712;
+			remoteInfo = LuckTracker;
+		};
+		1BD9E9DC1D8C4AC500D7F712 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BD9E9B11D8C4AC500D7F712 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BD9E9B81D8C4AC500D7F712;
+			remoteInfo = LuckTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1BD9E9B91D8C4AC500D7F712 /* LuckTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuckTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BD9E9BC1D8C4AC500D7F712 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1BD9E9BE1D8C4AC500D7F712 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1BD9E9C11D8C4AC500D7F712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1BD9E9C41D8C4AC500D7F712 /* LuckTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LuckTracker.xcdatamodel; sourceTree = "<group>"; };
+		1BD9E9C61D8C4AC500D7F712 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1BD9E9C91D8C4AC500D7F712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1BD9E9CB1D8C4AC500D7F712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BD9E9D01D8C4AC500D7F712 /* LuckTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuckTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BD9E9D41D8C4AC500D7F712 /* LuckTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckTrackerTests.swift; sourceTree = "<group>"; };
+		1BD9E9D61D8C4AC500D7F712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BD9E9DB1D8C4AC500D7F712 /* LuckTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuckTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BD9E9DF1D8C4AC500D7F712 /* LuckTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckTrackerUITests.swift; sourceTree = "<group>"; };
+		1BD9E9E11D8C4AC500D7F712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BD9E9B61D8C4AC500D7F712 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BD9E9CD1D8C4AC500D7F712 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BD9E9D81D8C4AC500D7F712 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BD9E9B01D8C4AC500D7F712 = {
+			isa = PBXGroup;
+			children = (
+				1BD9E9BB1D8C4AC500D7F712 /* LuckTracker */,
+				1BD9E9D31D8C4AC500D7F712 /* LuckTrackerTests */,
+				1BD9E9DE1D8C4AC500D7F712 /* LuckTrackerUITests */,
+				1BD9E9BA1D8C4AC500D7F712 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1BD9E9BA1D8C4AC500D7F712 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BD9E9B91D8C4AC500D7F712 /* LuckTracker.app */,
+				1BD9E9D01D8C4AC500D7F712 /* LuckTrackerTests.xctest */,
+				1BD9E9DB1D8C4AC500D7F712 /* LuckTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BD9E9BB1D8C4AC500D7F712 /* LuckTracker */ = {
+			isa = PBXGroup;
+			children = (
+				1BD9E9BC1D8C4AC500D7F712 /* AppDelegate.swift */,
+				1BD9E9BE1D8C4AC500D7F712 /* ViewController.swift */,
+				1BD9E9C01D8C4AC500D7F712 /* Main.storyboard */,
+				1BD9E9C61D8C4AC500D7F712 /* Assets.xcassets */,
+				1BD9E9C81D8C4AC500D7F712 /* LaunchScreen.storyboard */,
+				1BD9E9CB1D8C4AC500D7F712 /* Info.plist */,
+				1BD9E9C31D8C4AC500D7F712 /* LuckTracker.xcdatamodeld */,
+			);
+			path = LuckTracker;
+			sourceTree = "<group>";
+		};
+		1BD9E9D31D8C4AC500D7F712 /* LuckTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				1BD9E9D41D8C4AC500D7F712 /* LuckTrackerTests.swift */,
+				1BD9E9D61D8C4AC500D7F712 /* Info.plist */,
+			);
+			path = LuckTrackerTests;
+			sourceTree = "<group>";
+		};
+		1BD9E9DE1D8C4AC500D7F712 /* LuckTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1BD9E9DF1D8C4AC500D7F712 /* LuckTrackerUITests.swift */,
+				1BD9E9E11D8C4AC500D7F712 /* Info.plist */,
+			);
+			path = LuckTrackerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BD9E9B81D8C4AC500D7F712 /* LuckTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BD9E9E41D8C4AC500D7F712 /* Build configuration list for PBXNativeTarget "LuckTracker" */;
+			buildPhases = (
+				1BD9E9B51D8C4AC500D7F712 /* Sources */,
+				1BD9E9B61D8C4AC500D7F712 /* Frameworks */,
+				1BD9E9B71D8C4AC500D7F712 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LuckTracker;
+			productName = LuckTracker;
+			productReference = 1BD9E9B91D8C4AC500D7F712 /* LuckTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1BD9E9CF1D8C4AC500D7F712 /* LuckTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BD9E9E71D8C4AC500D7F712 /* Build configuration list for PBXNativeTarget "LuckTrackerTests" */;
+			buildPhases = (
+				1BD9E9CC1D8C4AC500D7F712 /* Sources */,
+				1BD9E9CD1D8C4AC500D7F712 /* Frameworks */,
+				1BD9E9CE1D8C4AC500D7F712 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BD9E9D21D8C4AC500D7F712 /* PBXTargetDependency */,
+			);
+			name = LuckTrackerTests;
+			productName = LuckTrackerTests;
+			productReference = 1BD9E9D01D8C4AC500D7F712 /* LuckTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1BD9E9DA1D8C4AC500D7F712 /* LuckTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BD9E9EA1D8C4AC500D7F712 /* Build configuration list for PBXNativeTarget "LuckTrackerUITests" */;
+			buildPhases = (
+				1BD9E9D71D8C4AC500D7F712 /* Sources */,
+				1BD9E9D81D8C4AC500D7F712 /* Frameworks */,
+				1BD9E9D91D8C4AC500D7F712 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BD9E9DD1D8C4AC500D7F712 /* PBXTargetDependency */,
+			);
+			name = LuckTrackerUITests;
+			productName = LuckTrackerUITests;
+			productReference = 1BD9E9DB1D8C4AC500D7F712 /* LuckTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BD9E9B11D8C4AC500D7F712 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Shea Furey-King";
+				TargetAttributes = {
+					1BD9E9B81D8C4AC500D7F712 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					1BD9E9CF1D8C4AC500D7F712 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 1BD9E9B81D8C4AC500D7F712;
+					};
+					1BD9E9DA1D8C4AC500D7F712 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 1BD9E9B81D8C4AC500D7F712;
+					};
+				};
+			};
+			buildConfigurationList = 1BD9E9B41D8C4AC500D7F712 /* Build configuration list for PBXProject "LuckTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1BD9E9B01D8C4AC500D7F712;
+			productRefGroup = 1BD9E9BA1D8C4AC500D7F712 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BD9E9B81D8C4AC500D7F712 /* LuckTracker */,
+				1BD9E9CF1D8C4AC500D7F712 /* LuckTrackerTests */,
+				1BD9E9DA1D8C4AC500D7F712 /* LuckTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BD9E9B71D8C4AC500D7F712 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BD9E9CA1D8C4AC500D7F712 /* LaunchScreen.storyboard in Resources */,
+				1BD9E9C71D8C4AC500D7F712 /* Assets.xcassets in Resources */,
+				1BD9E9C21D8C4AC500D7F712 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BD9E9CE1D8C4AC500D7F712 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BD9E9D91D8C4AC500D7F712 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BD9E9B51D8C4AC500D7F712 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BD9E9BF1D8C4AC500D7F712 /* ViewController.swift in Sources */,
+				1BD9E9C51D8C4AC500D7F712 /* LuckTracker.xcdatamodeld in Sources */,
+				1BD9E9BD1D8C4AC500D7F712 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BD9E9CC1D8C4AC500D7F712 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BD9E9D51D8C4AC500D7F712 /* LuckTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BD9E9D71D8C4AC500D7F712 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BD9E9E01D8C4AC500D7F712 /* LuckTrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1BD9E9D21D8C4AC500D7F712 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BD9E9B81D8C4AC500D7F712 /* LuckTracker */;
+			targetProxy = 1BD9E9D11D8C4AC500D7F712 /* PBXContainerItemProxy */;
+		};
+		1BD9E9DD1D8C4AC500D7F712 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BD9E9B81D8C4AC500D7F712 /* LuckTracker */;
+			targetProxy = 1BD9E9DC1D8C4AC500D7F712 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1BD9E9C01D8C4AC500D7F712 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BD9E9C11D8C4AC500D7F712 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1BD9E9C81D8C4AC500D7F712 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BD9E9C91D8C4AC500D7F712 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1BD9E9E21D8C4AC500D7F712 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1BD9E9E31D8C4AC500D7F712 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1BD9E9E51D8C4AC500D7F712 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LuckTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sfk.LuckTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1BD9E9E61D8C4AC500D7F712 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LuckTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sfk.LuckTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1BD9E9E81D8C4AC500D7F712 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LuckTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sfk.LuckTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LuckTracker.app/LuckTracker";
+			};
+			name = Debug;
+		};
+		1BD9E9E91D8C4AC500D7F712 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LuckTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sfk.LuckTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LuckTracker.app/LuckTracker";
+			};
+			name = Release;
+		};
+		1BD9E9EB1D8C4AC500D7F712 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LuckTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sfk.LuckTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LuckTracker;
+			};
+			name = Debug;
+		};
+		1BD9E9EC1D8C4AC500D7F712 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LuckTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sfk.LuckTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LuckTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BD9E9B41D8C4AC500D7F712 /* Build configuration list for PBXProject "LuckTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BD9E9E21D8C4AC500D7F712 /* Debug */,
+				1BD9E9E31D8C4AC500D7F712 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BD9E9E41D8C4AC500D7F712 /* Build configuration list for PBXNativeTarget "LuckTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BD9E9E51D8C4AC500D7F712 /* Debug */,
+				1BD9E9E61D8C4AC500D7F712 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1BD9E9E71D8C4AC500D7F712 /* Build configuration list for PBXNativeTarget "LuckTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BD9E9E81D8C4AC500D7F712 /* Debug */,
+				1BD9E9E91D8C4AC500D7F712 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1BD9E9EA1D8C4AC500D7F712 /* Build configuration list for PBXNativeTarget "LuckTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BD9E9EB1D8C4AC500D7F712 /* Debug */,
+				1BD9E9EC1D8C4AC500D7F712 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1BD9E9C31D8C4AC500D7F712 /* LuckTracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1BD9E9C41D8C4AC500D7F712 /* LuckTracker.xcdatamodel */,
+			);
+			currentVersion = 1BD9E9C41D8C4AC500D7F712 /* LuckTracker.xcdatamodel */;
+			path = LuckTracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1BD9E9B11D8C4AC500D7F712 /* Project object */;
+}
