@@ -61,6 +61,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var dice11AvgLabel: UILabel!
     @IBOutlet weak var dice12AvgLabel: UILabel!
     
+    @IBAction func resetGame(sender: AnyObject) {
+        
+        resetGame()
+        
+    }
     
     func setTotalLabels() {
         
@@ -76,6 +81,7 @@ class ViewController: UIViewController {
         dice11TotalLabel.text = ("\(dice11Total)")
         dice12TotalLabel.text = ("\(dice12Total)")
     }
+
     
     @IBAction func dice2ButtonTapped(sender: AnyObject) {
         
@@ -221,6 +227,38 @@ class ViewController: UIViewController {
         dice12AvgLabel.text = dice12String
         
         print("Total dice 2 Percent: \((Double(dice2Total)/(total))*100)")
+    }
+    
+    func resetGame() {
+        
+        dice2Total = 0
+        dice3Total = 0
+        dice4Total = 0
+        dice5Total = 0
+        dice6Total = 0
+        dice7Total = 0
+        dice8Total = 0
+        dice9Total = 0
+        dice10Total = 0
+        dice11Total = 0
+        dice12Total = 0
+        totalRolls = 0
+        
+        let defaultAvg = "0.00%"
+        dice2AvgLabel.text = defaultAvg
+        dice3AvgLabel.text = defaultAvg
+        dice4AvgLabel.text = defaultAvg
+        dice5AvgLabel.text = defaultAvg
+        dice6AvgLabel.text = defaultAvg
+        dice7AvgLabel.text = defaultAvg
+        dice8AvgLabel.text = defaultAvg
+        dice9AvgLabel.text = defaultAvg
+        dice10AvgLabel.text = defaultAvg
+        dice11AvgLabel.text = defaultAvg
+        dice12AvgLabel.text = defaultAvg
+        
+        setTotalLabels()
+        setTotalNumberOfRolls()
     }
     
     
