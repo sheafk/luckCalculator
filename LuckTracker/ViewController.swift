@@ -12,11 +12,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //setTotalNumberOfRolls()
         setTotalLabels()
         setTotalNumberOfRolls()
-//        totalRolls = dice2Total + dice3Total + dice4Total + dice5Total + dice6Total + dice7Total + dice8Total + dice9Total + dice10Total + dice11Total + dice12Total
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,6 +33,7 @@ class ViewController: UIViewController {
     var dice11Total = Int()
     var dice12Total = Int()
     var totalRolls = Int()
+
     
     @IBOutlet weak var dice2TotalLabel: UILabel!
     @IBOutlet weak var dice3TotalLabel: UILabel!
@@ -64,6 +62,13 @@ class ViewController: UIViewController {
     @IBAction func resetGame(sender: AnyObject) {
         
         resetGame()
+        
+    }
+    
+    @IBOutlet weak var tableStackView: UIStackView!
+    
+    func autoLayoutForStackView() {
+        
         
     }
     
@@ -198,7 +203,7 @@ class ViewController: UIViewController {
     
     func updatePercentages() {
         
-        var total = setTotalNumberOfRolls()
+        let total = setTotalNumberOfRolls()
         
         let dice2String = String(format: "%.2f%%", ((Double(dice2Total)/(total))*100))
         let dice3String = String(format: "%.2f%%", ((Double(dice3Total)/(total))*100))
@@ -230,7 +235,7 @@ class ViewController: UIViewController {
     }
     
     func resetGame() {
-        
+
         dice2Total = 0
         dice3Total = 0
         dice4Total = 0
@@ -260,7 +265,6 @@ class ViewController: UIViewController {
         setTotalLabels()
         setTotalNumberOfRolls()
     }
-    
     
 }
 
