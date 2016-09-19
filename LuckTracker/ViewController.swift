@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  LuckTracker
 //
-//  Created by Flatiron School on 9/16/16.
+//  Created by Shea Furey-King on 9/16/16.
 //  Copyright © 2016 Shea Furey-King. All rights reserved.
 //
 
