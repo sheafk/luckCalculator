@@ -59,7 +59,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var dice11AvgLabel: UILabel!
     @IBOutlet weak var dice12AvgLabel: UILabel!
     
-    @IBAction func resetGame(sender: AnyObject) {
+    @IBAction func resetGame(_ sender: AnyObject) {
         
         resetGame()
         
@@ -88,7 +88,7 @@ class ViewController: UIViewController {
     }
 
     
-    @IBAction func dice2ButtonTapped(sender: AnyObject) {
+    @IBAction func dice2ButtonTapped(_ sender: AnyObject) {
         
         dice2Total = dice2Total + 1
         
@@ -98,7 +98,7 @@ class ViewController: UIViewController {
         updatePercentages()
     }
     
-    @IBAction func dice3ButtonTapped(sender: AnyObject) {
+    @IBAction func dice3ButtonTapped(_ sender: AnyObject) {
         dice3Total = dice3Total + 1
         print("Someone rolled a 3. Total number of 3's is \(dice3Total)")
         setTotalLabels()
@@ -106,7 +106,7 @@ class ViewController: UIViewController {
         updatePercentages()
     }
     
-    @IBAction func dice4ButtonTapped(sender: AnyObject) {
+    @IBAction func dice4ButtonTapped(_ sender: AnyObject) {
         
         dice4Total = dice4Total + 1
         print("Someone rolled a 4. Total number of 4's is \(dice4Total)")
@@ -115,7 +115,7 @@ class ViewController: UIViewController {
         updatePercentages()
     }
     
-    @IBAction func dice5ButtonTapped(sender: AnyObject) {
+    @IBAction func dice5ButtonTapped(_ sender: AnyObject) {
         
         dice5Total = dice5Total + 1
         print("Someone rolled a 5. Total number of 5's is \(dice5Total)")
@@ -124,7 +124,7 @@ class ViewController: UIViewController {
         updatePercentages()
     }
     
-    @IBAction func dice6ButtonTapped(sender: AnyObject) {
+    @IBAction func dice6ButtonTapped(_ sender: AnyObject) {
         
         dice6Total = dice6Total + 1
         print("Someone rolled a 6. Total number of 6's is \(dice6Total)")
@@ -133,7 +133,7 @@ class ViewController: UIViewController {
         updatePercentages()
     }
     
-    @IBAction func dice7ButtonTapped(sender: AnyObject) {
+    @IBAction func dice7ButtonTapped(_ sender: AnyObject) {
         
         dice7Total = dice7Total + 1
         print("Someone rolled a 7. Total number of 7's is \(dice7Total)")
@@ -142,7 +142,7 @@ class ViewController: UIViewController {
         updatePercentages()
     }
     
-    @IBAction func dice8ButtonTapped(sender: AnyObject) {
+    @IBAction func dice8ButtonTapped(_ sender: AnyObject) {
         
         dice8Total = dice8Total + 1
         print("Someone rolled a 8. Total number of 8's is \(dice8Total)")
@@ -151,7 +151,7 @@ class ViewController: UIViewController {
         updatePercentages()
     }
     
-    @IBAction func dice9ButtonTapped(sender: AnyObject) {
+    @IBAction func dice9ButtonTapped(_ sender: AnyObject) {
         
         dice9Total = dice9Total + 1
 
@@ -161,7 +161,7 @@ class ViewController: UIViewController {
         updatePercentages()
     }
     
-    @IBAction func dice10ButtonTapped(sender: AnyObject) {
+    @IBAction func dice10ButtonTapped(_ sender: AnyObject) {
         
         dice10Total = dice10Total + 1
         
@@ -171,7 +171,7 @@ class ViewController: UIViewController {
         updatePercentages()
     }
     
-    @IBAction func dice11ButtonTapped(sender: AnyObject) {
+    @IBAction func dice11ButtonTapped(_ sender: AnyObject) {
         
         dice11Total = dice11Total + 1
         
@@ -181,7 +181,7 @@ class ViewController: UIViewController {
         updatePercentages()
     }
     
-    @IBAction func dice12ButtonTapped(sender: AnyObject) {
+    @IBAction func dice12ButtonTapped(_ sender: AnyObject) {
         
         dice12Total = dice12Total + 1
         
