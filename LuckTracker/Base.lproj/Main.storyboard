@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="l37-zX-Uzq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="l37-zX-Uzq">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Luck Calculator-->
@@ -14,159 +15,135 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Hhc-Lp-2Hu">
-                                <rect key="frame" x="183" y="84" width="193" height="496"/>
+                                <frame key="frameInset" minX="183" minY="84" width="193" height="563"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="bu3-dh-inm">
-                                        <rect key="frame" x="0.0" y="0.0" width="35" height="496"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dice" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wk6-ch-L5V">
-                                                <rect key="frame" x="0.0" y="0.0" width="35" height="29"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dice" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wk6-ch-L5V">
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.91434425115585327" green="0.24562284350395203" blue="0.21347567439079285" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.88146257400512695" green="0.15328134596347809" blue="0.16441792249679565" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" tag="2" contentMode="scaleToFill" verticalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPQ-gd-A9F">
-                                                <rect key="frame" x="0.0" y="30" width="35" height="41"/>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPQ-gd-A9F" customClass="BFPaperButton">
                                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <color key="tintColor" red="0.9503282904624939" green="0.87767970561981201" blue="0.79023551940917969" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <color key="tintColor" red="0.93576180934906006" green="0.84998810291290283" blue="0.7446286678314209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="2">
-                                                    <color key="titleColor" red="0.91505295038223267" green="0.50874358415603638" blue="0.28165379166603088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="titleShadowColor" red="0.91434425115585327" green="0.24562284350395203" blue="0.21347567439079285" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" red="0.88518369197845459" green="0.42649435997009277" blue="0.22088739275932312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="dice2ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BVP-Qc-6jA"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iuy-Ne-uGV">
-                                                <rect key="frame" x="0.0" y="72" width="35" height="41"/>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iuy-Ne-uGV">
                                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <color key="tintColor" red="0.9503282904624939" green="0.87767970561981201" blue="0.79023551940917969" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <color key="tintColor" red="0.93576180934906006" green="0.84998810291290283" blue="0.7446286678314209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="3">
-                                                    <color key="titleColor" red="0.91505295038223267" green="0.50874358415603638" blue="0.28165379166603088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="titleShadowColor" red="0.91434425115585327" green="0.24562284350395203" blue="0.21347567439079285" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" red="0.88518369197845459" green="0.42649435997009277" blue="0.22088739275932312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="dice3ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ngx-2j-JYB"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sc4-Al-Y0c">
-                                                <rect key="frame" x="0.0" y="114" width="35" height="41"/>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sc4-Al-Y0c">
                                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <color key="tintColor" red="0.9503282904624939" green="0.87767970561981201" blue="0.79023551940917969" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <color key="tintColor" red="0.93576180934906006" green="0.84998810291290283" blue="0.7446286678314209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="4">
-                                                    <color key="titleColor" red="0.91505295038223267" green="0.50874358415603638" blue="0.28165379166603088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="titleShadowColor" red="0.91434425115585327" green="0.24562284350395203" blue="0.21347567439079285" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" red="0.88518369197845459" green="0.42649435997009277" blue="0.22088739275932312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="dice4ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YCV-Uf-efq"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ami-16-yxC">
-                                                <rect key="frame" x="0.0" y="156" width="35" height="41"/>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ami-16-yxC">
                                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <color key="tintColor" red="0.9503282904624939" green="0.87767970561981201" blue="0.79023551940917969" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <color key="tintColor" red="0.93576180934906006" green="0.84998810291290283" blue="0.7446286678314209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="5">
-                                                    <color key="titleColor" red="0.91505295038223267" green="0.50874358415603638" blue="0.28165379166603088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="titleShadowColor" red="0.91434425115585327" green="0.24562284350395203" blue="0.21347567439079285" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" red="0.88518369197845459" green="0.42649435997009277" blue="0.22088739275932312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="dice5ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ejg-9B-4DH"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="6" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="imT-sH-FoF">
-                                                <rect key="frame" x="0.0" y="198" width="35" height="41"/>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="imT-sH-FoF">
                                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <color key="tintColor" red="0.9503282904624939" green="0.87767970561981201" blue="0.79023551940917969" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <color key="tintColor" red="0.93576180934906006" green="0.84998810291290283" blue="0.7446286678314209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="6">
-                                                    <color key="titleColor" red="0.91505295038223267" green="0.50874358415603638" blue="0.28165379166603088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="titleShadowColor" red="0.91434425115585327" green="0.24562284350395203" blue="0.21347567439079285" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" red="0.88518369197845459" green="0.42649435997009277" blue="0.22088739275932312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="dice6ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IHb-4P-D4T"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTD-x3-5Kt">
-                                                <rect key="frame" x="0.0" y="240" width="35" height="41"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <color key="tintColor" red="0.9503282904624939" green="0.87767970561981201" blue="0.79023551940917969" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <color key="tintColor" red="0.93576180934906006" green="0.84998810291290283" blue="0.7446286678314209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="7">
-                                                    <color key="titleColor" red="0.91505295038223267" green="0.50874358415603638" blue="0.28165379166603088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="titleShadowColor" red="0.91434425115585327" green="0.24562284350395203" blue="0.21347567439079285" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" red="0.88518369197845459" green="0.42649435997009277" blue="0.22088739275932312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="dice7ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zWT-gF-5ge"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="8" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jnX-fn-6QZ">
-                                                <rect key="frame" x="0.0" y="282" width="35" height="42"/>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jnX-fn-6QZ">
                                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <color key="tintColor" red="0.9503282904624939" green="0.87767970561981201" blue="0.79023551940917969" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <color key="tintColor" red="0.93576180934906006" green="0.84998810291290283" blue="0.7446286678314209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="8">
-                                                    <color key="titleColor" red="0.91505295038223267" green="0.50874358415603638" blue="0.28165379166603088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="titleShadowColor" red="0.91434425115585327" green="0.24562284350395203" blue="0.21347567439079285" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" red="0.88518369197845459" green="0.42649435997009277" blue="0.22088739275932312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="dice8ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xka-wx-Ork"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="9" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSy-wa-4ga">
-                                                <rect key="frame" x="0.0" y="325" width="35" height="41"/>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSy-wa-4ga">
                                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <color key="tintColor" red="0.9503282904624939" green="0.87767970561981201" blue="0.79023551940917969" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <color key="tintColor" red="0.93576180934906006" green="0.84998810291290283" blue="0.7446286678314209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="9">
-                                                    <color key="titleColor" red="0.91505295038223267" green="0.50874358415603638" blue="0.28165379166603088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="titleShadowColor" red="0.91434425115585327" green="0.24562284350395203" blue="0.21347567439079285" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" red="0.88518369197845459" green="0.42649435997009277" blue="0.22088739275932312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="dice9ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MuC-hr-ckN"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boq-ui-MpU">
-                                                <rect key="frame" x="0.0" y="367" width="35" height="41"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <color key="tintColor" red="0.9503282904624939" green="0.87767970561981201" blue="0.79023551940917969" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <color key="tintColor" red="0.93576180934906006" green="0.84998810291290283" blue="0.7446286678314209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="10">
-                                                    <color key="titleColor" red="0.91505295038223267" green="0.50874358415603638" blue="0.28165379166603088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="titleShadowColor" red="0.91434425115585327" green="0.24562284350395203" blue="0.21347567439079285" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" red="0.88518369197845459" green="0.42649435997009277" blue="0.22088739275932312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="dice10ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="erP-2d-M2l"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTC-L3-aCK">
-                                                <rect key="frame" x="0.0" y="409" width="35" height="41"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <color key="tintColor" red="0.9503282904624939" green="0.87767970561981201" blue="0.79023551940917969" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <color key="tintColor" red="0.93576180934906006" green="0.84998810291290283" blue="0.7446286678314209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="11">
-                                                    <color key="titleColor" red="0.91505295038223267" green="0.50874358415603638" blue="0.28165379166603088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="titleShadowColor" red="0.91434425115585327" green="0.24562284350395203" blue="0.21347567439079285" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" red="0.88518369197845459" green="0.42649435997009277" blue="0.22088739275932312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="dice11ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8jR-yq-c8u"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mou-TA-cpn">
-                                                <rect key="frame" x="0.0" y="451" width="35" height="45"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <color key="tintColor" red="0.9503282904624939" green="0.87767970561981201" blue="0.79023551940917969" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <color key="tintColor" red="0.93576180934906006" green="0.84998810291290283" blue="0.7446286678314209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="12">
-                                                    <color key="titleColor" red="0.91505295038223267" green="0.50874358415603638" blue="0.28165379166603088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="titleShadowColor" red="0.91434425115585327" green="0.24562284350395203" blue="0.21347567439079285" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" red="0.88518369197845459" green="0.42649435997009277" blue="0.22088739275932312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="dice12ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ExP-OT-HtA"/>
@@ -175,177 +152,151 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="r7f-dh-cb1">
-                                        <rect key="frame" x="51" y="0.0" width="38" height="496"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ky0-Oq-EvV">
-                                                <rect key="frame" x="0.0" y="0.0" width="38" height="29"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.91434425115585327" green="0.24562284350395203" blue="0.21347567439079285" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.88146257400512695" green="0.15328134596347809" blue="0.16441792249679565" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ps4-yH-gNi">
-                                                <rect key="frame" x="0.0" y="42" width="38" height="30"/>
-                                                <color key="backgroundColor" red="0.96749264001846313" green="0.93842035531997681" blue="0.86789226531982422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.95840942859649658" green="0.92502307891845703" blue="0.83697700500488281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.91505295038223267" green="0.50874358415603638" blue="0.28165379166603088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.88518369197845459" green="0.42649435997009277" blue="0.22088739275932312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2k-gl-JFa">
-                                                <rect key="frame" x="0.0" y="85" width="38" height="29"/>
-                                                <color key="backgroundColor" red="0.96749264001846313" green="0.93842035531997681" blue="0.86789226531982422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.95840942859649658" green="0.92502307891845703" blue="0.83697700500488281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.91505295038223267" green="0.50874358415603638" blue="0.28165379166603088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.88518369197845459" green="0.42649435997009277" blue="0.22088739275932312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcg-j4-L6M">
-                                                <rect key="frame" x="0.0" y="127" width="38" height="30"/>
-                                                <color key="backgroundColor" red="0.96749264001846313" green="0.93842035531997681" blue="0.86789226531982422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.95840942859649658" green="0.92502307891845703" blue="0.83697700500488281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.91505295038223267" green="0.50874358415603638" blue="0.28165379166603088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.88518369197845459" green="0.42649435997009277" blue="0.22088739275932312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lgu-oq-9hy">
-                                                <rect key="frame" x="0.0" y="170" width="38" height="29"/>
-                                                <color key="backgroundColor" red="0.96749264001846313" green="0.93842035531997681" blue="0.86789226531982422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.95840942859649658" green="0.92502307891845703" blue="0.83697700500488281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.91505295038223267" green="0.50874358415603638" blue="0.28165379166603088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.88518369197845459" green="0.42649435997009277" blue="0.22088739275932312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDF-8L-IXS">
-                                                <rect key="frame" x="0.0" y="212" width="38" height="30"/>
-                                                <color key="backgroundColor" red="0.96749264001846313" green="0.93842035531997681" blue="0.86789226531982422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.95840942859649658" green="0.92502307891845703" blue="0.83697700500488281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.91505295038223267" green="0.50874358415603638" blue="0.28165379166603088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.88518369197845459" green="0.42649435997009277" blue="0.22088739275932312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3I-VN-Pd8">
-                                                <rect key="frame" x="0.0" y="255" width="38" height="29"/>
-                                                <color key="backgroundColor" red="0.96749264001846313" green="0.93842035531997681" blue="0.86789226531982422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.95840942859649658" green="0.92502307891845703" blue="0.83697700500488281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.91505295038223267" green="0.50874358415603638" blue="0.28165379166603088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.88518369197845459" green="0.42649435997009277" blue="0.22088739275932312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="piP-0j-Qfn">
-                                                <rect key="frame" x="0.0" y="297" width="38" height="29"/>
-                                                <color key="backgroundColor" red="0.96749264001846313" green="0.93842035531997681" blue="0.86789226531982422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.95840942859649658" green="0.92502307891845703" blue="0.83697700500488281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.91505295038223267" green="0.50874358415603638" blue="0.28165379166603088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.88518369197845459" green="0.42649435997009277" blue="0.22088739275932312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3u5-tO-maY">
-                                                <rect key="frame" x="0.0" y="339" width="38" height="30"/>
-                                                <color key="backgroundColor" red="0.96749264001846313" green="0.93842035531997681" blue="0.86789226531982422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.95840942859649658" green="0.92502307891845703" blue="0.83697700500488281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.91505295038223267" green="0.50874358415603638" blue="0.28165379166603088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.88518369197845459" green="0.42649435997009277" blue="0.22088739275932312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2c-oH-0KV">
-                                                <rect key="frame" x="0.0" y="382" width="38" height="29"/>
-                                                <color key="backgroundColor" red="0.96749264001846313" green="0.93842035531997681" blue="0.86789226531982422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.95840942859649658" green="0.92502307891845703" blue="0.83697700500488281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.91505295038223267" green="0.50874358415603638" blue="0.28165379166603088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.88518369197845459" green="0.42649435997009277" blue="0.22088739275932312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ouc-mG-NzD">
-                                                <rect key="frame" x="0.0" y="424" width="38" height="30"/>
-                                                <color key="backgroundColor" red="0.96749264001846313" green="0.93842035531997681" blue="0.86789226531982422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.95840942859649658" green="0.92502307891845703" blue="0.83697700500488281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.91505295038223267" green="0.50874358415603638" blue="0.28165379166603088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.88518369197845459" green="0.42649435997009277" blue="0.22088739275932312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sxy-DA-NOU">
-                                                <rect key="frame" x="0.0" y="467" width="38" height="29"/>
-                                                <color key="backgroundColor" red="0.96749264001846313" green="0.93842035531997681" blue="0.86789226531982422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.95840942859649658" green="0.92502307891845703" blue="0.83697700500488281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.91505295038223267" green="0.50874358415603638" blue="0.28165379166603088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.88518369197845459" green="0.42649435997009277" blue="0.22088739275932312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="ggk-St-3oW">
-                                        <rect key="frame" x="105" y="0.0" width="88" height="496"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Percentage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHz-TB-vvo">
-                                                <rect key="frame" x="0.0" y="0.0" width="88" height="29"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.91434425115585327" green="0.24562284350395203" blue="0.21347567439079285" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.88146257400512695" green="0.15328134596347809" blue="0.16441792249679565" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eE-9S-5qT">
-                                                <rect key="frame" x="0.0" y="42" width="88" height="30"/>
-                                                <color key="backgroundColor" red="0.96749264001846313" green="0.93842035531997681" blue="0.86789226531982422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.95840942859649658" green="0.92502307891845703" blue="0.83697700500488281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.91505295038223267" green="0.50874358415603638" blue="0.28165379166603088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.88518369197845459" green="0.42649435997009277" blue="0.22088739275932312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mj-cy-a7s">
-                                                <rect key="frame" x="0.0" y="85" width="88" height="29"/>
-                                                <color key="backgroundColor" red="0.96749264001846313" green="0.93842035531997681" blue="0.86789226531982422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.95840942859649658" green="0.92502307891845703" blue="0.83697700500488281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.91505295038223267" green="0.50874358415603638" blue="0.28165379166603088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.88518369197845459" green="0.42649435997009277" blue="0.22088739275932312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neP-Jt-5Gz">
-                                                <rect key="frame" x="0.0" y="127" width="88" height="30"/>
-                                                <color key="backgroundColor" red="0.96749264001846313" green="0.93842035531997681" blue="0.86789226531982422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.95840942859649658" green="0.92502307891845703" blue="0.83697700500488281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.91505295038223267" green="0.50874358415603638" blue="0.28165379166603088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.88518369197845459" green="0.42649435997009277" blue="0.22088739275932312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIv-1w-iwq">
-                                                <rect key="frame" x="0.0" y="170" width="88" height="29"/>
-                                                <color key="backgroundColor" red="0.96749264001846313" green="0.93842035531997681" blue="0.86789226531982422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.95840942859649658" green="0.92502307891845703" blue="0.83697700500488281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.91505295038223267" green="0.50874358415603638" blue="0.28165379166603088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.88518369197845459" green="0.42649435997009277" blue="0.22088739275932312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCj-2C-TOL">
-                                                <rect key="frame" x="0.0" y="212" width="88" height="30"/>
-                                                <color key="backgroundColor" red="0.96749264001846313" green="0.93842035531997681" blue="0.86789226531982422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.95840942859649658" green="0.92502307891845703" blue="0.83697700500488281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.91505295038223267" green="0.50874358415603638" blue="0.28165379166603088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.88518369197845459" green="0.42649435997009277" blue="0.22088739275932312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRl-H4-sQN">
-                                                <rect key="frame" x="0.0" y="255" width="88" height="29"/>
-                                                <color key="backgroundColor" red="0.96749264001846313" green="0.93842035531997681" blue="0.86789226531982422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.95840942859649658" green="0.92502307891845703" blue="0.83697700500488281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.91505295038223267" green="0.50874358415603638" blue="0.28165379166603088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.88518369197845459" green="0.42649435997009277" blue="0.22088739275932312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JhC-Gs-Z7T">
-                                                <rect key="frame" x="0.0" y="297" width="88" height="29"/>
-                                                <color key="backgroundColor" red="0.96749264001846313" green="0.93842035531997681" blue="0.86789226531982422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.95840942859649658" green="0.92502307891845703" blue="0.83697700500488281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.91505295038223267" green="0.50874358415603638" blue="0.28165379166603088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.88518369197845459" green="0.42649435997009277" blue="0.22088739275932312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qc9-5L-xC2">
-                                                <rect key="frame" x="0.0" y="339" width="88" height="30"/>
-                                                <color key="backgroundColor" red="0.96749264001846313" green="0.93842035531997681" blue="0.86789226531982422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.95840942859649658" green="0.92502307891845703" blue="0.83697700500488281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.91505295038223267" green="0.50874358415603638" blue="0.28165379166603088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.88518369197845459" green="0.42649435997009277" blue="0.22088739275932312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxC-fg-Ppg">
-                                                <rect key="frame" x="0.0" y="382" width="88" height="29"/>
-                                                <color key="backgroundColor" red="0.96749264001846313" green="0.93842035531997681" blue="0.86789226531982422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.95840942859649658" green="0.92502307891845703" blue="0.83697700500488281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.91505295038223267" green="0.50874358415603638" blue="0.28165379166603088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.88518369197845459" green="0.42649435997009277" blue="0.22088739275932312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0Z-1H-7Ia">
-                                                <rect key="frame" x="0.0" y="424" width="88" height="30"/>
-                                                <color key="backgroundColor" red="0.96749264001846313" green="0.93842035531997681" blue="0.86789226531982422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.95840942859649658" green="0.92502307891845703" blue="0.83697700500488281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.91505295038223267" green="0.50874358415603638" blue="0.28165379166603088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.88518369197845459" green="0.42649435997009277" blue="0.22088739275932312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2be-zO-ldV">
-                                                <rect key="frame" x="0.0" y="467" width="88" height="29"/>
-                                                <color key="backgroundColor" red="0.96749264001846313" green="0.93842035531997681" blue="0.86789226531982422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.95840942859649658" green="0.92502307891845703" blue="0.83697700500488281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.91505295038223267" green="0.50874358415603638" blue="0.28165379166603088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.88518369197845459" green="0.42649435997009277" blue="0.22088739275932312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -353,7 +304,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.9503282904624939" green="0.87767970561981201" blue="0.79023551940917969" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.93576180934906006" green="0.84998810291290283" blue="0.7446286678314209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="y3c-jy-aDJ" firstAttribute="bottom" secondItem="Hhc-Lp-2Hu" secondAttribute="top" constant="-20" id="MCu-o5-yGi"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Hhc-Lp-2Hu" secondAttribute="bottom" constant="20" id="NLd-vh-a7Q"/>
@@ -363,7 +314,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Luck Calculator" id="ThS-Ib-OXR">
                         <barButtonItem key="rightBarButtonItem" title="Reset" id="DWd-1h-xCd">
-                            <color key="tintColor" red="0.91434425115585327" green="0.24562284350395203" blue="0.21347567439079285" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" red="0.88146257400512695" green="0.15328134596347809" blue="0.16441792249679565" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="resetGame:" destination="BYZ-38-t0r" id="XdN-8T-TMS"/>
                             </connections>
